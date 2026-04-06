@@ -69,3 +69,35 @@ button:hover {
 .password:hover {
   background-color: #3d3d3d;
 }
+
+/* Mobile view */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 32px; /* lebih kecil agar muat di layar */
+    text-align: center;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .passwords {
+    flex-direction: column; /* ubah jadi vertikal */
+    align-items: center;
+    gap: 1px;
+  }
+
+  .password {
+    width: 100%; /* penuh lebar layar */
+    font-size: 14px;
+  }
+
+  .supported-text {
+    text-align: center;
+  }
+
+  button {
+    width: 100%; /* tombol penuh lebar */
+    margin-top: 15px;
+  }
+}
